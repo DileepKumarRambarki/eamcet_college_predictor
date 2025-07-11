@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎓 College Predictor</h2>
+    <form onsubmit="predictColleges(); return false;">
+      <input type="number" id="rank" placeholder="Enter your rank (e.g., 50000)" required>
+      <select id="branch" required>
+        <option value="">Select Branch</option>
+        <option value="CSE">Computer Science</option>
+        <option value="ECE">Electronics and Communication</option>
+        <option value="EEE">Electrical and Electronics</option>
+        <option value="MEC">Mechanical</option>
+        <option value="CIV">Civil</option>
+        <option value="CHE">Chemical</option>
+        <option value="INF">Information Technology</option>
+        <option value="AI">Artificial Intelligence</option>
+        <option value="AID">AI and Data Science</option>
+        <option value="AIM">AI and ML</option>
+        <option value="CSM">CS (AI-ML)</option>
+        <option value="CSD">CS (Data Science)</option>
+      </select>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="OC_BOYS">OC_BOYS</option>
+        <option value="OC_GIRLS">OC_GIRLS</option>
+        <option value="SC_BOYS">SC_BOYS</option>
+        <option value="SC_GIRLS">SC_GIRLS</option>
+        <option value="ST_BOYS">ST_BOYS</option>
+        <option value="ST_GIRLS">ST_GIRLS</option>
+        <option value="BCA_BOYS">BCA_BOYS</option>
+        <option value="BCA_GIRLS">BCA_GIRLS</option>
+        <option value="BCB_BOYS">BCB_BOYS</option>
+        <option value="BCB_GIRLS">BCB_GIRLS</option>
+        <option value="BCC_BOYS">BCC_BOYS</option>
+        <option value="BCC_GIRLS">BCC_GIRLS</option>
+        <option value="BCD_BOYS">BCD_BOYS</option>
+        <option value="BCD_GIRLS">BCD_GIRLS</option>
+        <option value="BCE_BOYS">BCE_BOYS</option>
+        <option value="BCE_GIRLS">BCE_GIRLS</option>
+        <option value="OC_EWS_BOYS">OC_EWS_BOYS</option>
+        <option value="OC_EWS_GIRLS">OC_EWS_GIRLS</option>
+      </select>
+      <button type="submit">Show Colleges</button>
+    </form>
+    <div id="results">
+      <table id="resultTable" style="display: none;">
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Place</th>
+            <th>Branch</th>
+            <th>Category</th>
+            <th>Last Rank</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
