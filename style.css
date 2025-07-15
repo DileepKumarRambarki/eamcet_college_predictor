@@ -103,7 +103,7 @@ th {
 
 @media screen and (max-width: 500px) {
   .container {
-    padding: 2vw;
+    padding: 20px;
   }
   table, thead, tbody, th, td, tr {
     display: block;
